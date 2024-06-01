@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class selector</title>
+    <style>
+        .contenedor {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        header li {
+            list-style:lower-greek;
+        }
+        a:link  {
+            text-decoration: none;
+            background-color: orange;
+            border: 1px solid red;
+            color:black;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+
+        }
+
+        a:link , a:visited {
+            text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: white;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+
+        }
+        a:hover , a:active {
+            background-color: red;
+            color: purple;
+        }
+        header li:nth-child(2) {
+            font-size: 20px;
+        }
+        section div:nth-child(odd) {
+            background-color: grey;
+        }
+        section div:nth-child(even) {
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo class selector</h1>
+    <h1>Lista de Enlaces</h1>
+    <header>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+    </header>
+    <h1>Divs Contenedores</h1>
+    <section>
+    <div class="contenedor">DIV 1: Contenido del primer div</div>
+    <div class="contenedor">DIV 2: Contenido del segundo div</div>
+    <div class="contenedor">DIV 3: Contenido del tercer div</div>
+    <div class="contenedor">DIV 4: Contenido del cuarto div</div>
+    <div class="contenedor">DIV 5: Contenido del quinto div</div>
+    <div class="contenedor">DIV 6: Contenido del sexto div</div>
+    <div class="contenedor">DIV 7: Contenido del séptimo div</div>
+    <div class="contenedor">DIV 8: Contenido del octavo div</div>
+    <div class="contenedor">DIV 9: Contenido del noveno div</div>
+    <div class="contenedor">DIV 10: Contenido del décimo div</div>
+    </section>
+</body>
+</html>
