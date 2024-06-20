@@ -6,13 +6,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center; 
 }
 
 /* Estilo del encabezado */
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 0;  
     text-align: center;
 }
 
@@ -62,10 +63,12 @@ main {
 
 section {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 section h2 {
     color: #444;
+    text-align: center;
 }
 
 /* Estilo del pie de página */
