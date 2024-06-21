@@ -2,18 +2,60 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Box Model</title>
     <style>
+        /* Estilos generales */
         body {
-            font-size: 120%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
         }
-    </style>  
+        #box {
+            background-color:blue;
+        }
+        #content {
+            background-color:green;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            width: 500px;
+            margin: 20px auto;
+            border: 10px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box; /* Especificar box-sizing para incluir el borde en el ancho */
+        }
+
+        /* Título */
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Párrafo */
+        p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <div>Regular text</div>
-    <div style="font-size: 2em;">2em text
-        <div>4em text
-            <div>2 em again!</div>
+
+    <div class="contenedor">
+        <h1>Box model</h1>
+        <div id="box">
+            <div id="content">Lore ipsum dolor sit men at work, si pues, sacudon</div>
         </div>
+        <h2>Ejemplo de Box Model</h2>
+
+        <p>Este párrafo está dentro de un contenedor con un borde y relleno. El box-sizing está configurado en "border-box", lo que significa que el ancho del contenedor incluye el borde y el relleno.</p>
+
+        <p>El modelo de caja es un concepto fundamental en CSS que define cómo se calculan las dimensiones y el espacio alrededor de los elementos HTML. Es importante comprender el box model para crear diseños web consistentes y receptivos.</p>
     </div>
+
 </body>
 </html>
