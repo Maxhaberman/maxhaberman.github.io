@@ -6,11 +6,27 @@
     <title>Ejemplo Box Model</title>
     <style>
         p {
+            background-color:blueviolet;
             width: 50px;
             height: 50px;
-            border: 1px solid orange;
+        }
+        #p1 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 150px;
+            left: 150px; 
+            background-color: orangered;
             clear: left;
             margin-right: 10px;
+        }
+        #p2 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: black;
         }
     </style>
 </head>
@@ -18,6 +34,8 @@
     <h1>Relative Elements</h1>
     <div>
         <p></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
     </div>
 </body>
 </html>
