@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Box Model</title>
     <style>
+        body {
+            margin: 20;
+            padding: 100;
+            background-color: grey;
+        }
         div {
-            background-color: #00FFFF;
+            background-color: greenyellow;
+        }
+        #div1 {
+            background-color: beige;
         }
         #box {
-            background-color: #5F9EA0;
+            margin: 20px;
+            background-color: blue;
+            padding: 20px;
+            border: 10px solid  black;
+            width: 1000px;
+            box-sizing: border-box;
         }
         #content {
             background-color: green;
@@ -34,10 +47,35 @@
         }
         #p4 {
             background-color: #FF7F50;
+            align-content: center;
         }
-        section {
-            clear: left;
+        #p5 {
+            background-color: goldenrod;
+            text-align: center;
+            width: 500px;
+            height: 500px;
         }
+        #p6 {
+            background-color: greenyellow;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+        }
+        #p7 {
+            background-color: orange;
+            text-align: center;
+            width: 1000px;
+            height: 1000px;
+        }
+
+
+        @media (min-width: 900px) {
+            #p6 {  /* Corrected selector (no space after #) */
+                width: 500px;
+                height: 500px;
+            }
+        }
+            
 </style>
 </head>
 <body>
@@ -47,11 +85,10 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </div>
     </div>
-    <div>
-        <p id="p1"></p>
-        <p id="p2"></p>
-        <p id="p3"></p>
-        <p id="p4"></p>
+    <div id="div1">
+        <p id="p5"> 500</p>
+        <p id="p6">50</p>
+        <p id="p7">1000</p>
         <section>Texto normal despues de los parrafos boxes </section>
     </div>
 </body>
